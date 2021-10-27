@@ -1,0 +1,13 @@
+
+FLASK==1.1.1
+Flask-Cors==3.0.8
+Werkzeug==0.16.0
+gevent
+numpy==1.19.5
+keras==2.6.0
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+nltk==3.6.1
+pandas==1.2.4
+scikit-learn==0.24.1
+tensorflow==2.2.0

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction</title>
+	<link rel="stylesheet" type="text/css" href="..\static\prediction.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+
+</head>
+<body>
+
+	<div class="main">
+
+
+		 <ul><br />
+			 <li class="active"><a href="{{ url_for('welcome') }}"><i class="fa fa-home"></i><span>Home</span></a></i>
+			  </li>
+			  <li><a href="prediction" ><i class="fa fa-search" aria-hidden="true"></i><span>Predict</span></a>
+
+			 <li><a href="#"><i class="fa fa-address-book-o"></i><span>About</span></a>
+			 <div class="submenu">
+				 <ul>
+					 <li>
+						 <a href="project"></i>Project</a>
+					 </li>
+					
+				 </ul>
+			 </div>
+
+
+			 </li>
+		 </ul>
+	 </div>
+	<div class="review-title">
+		<h1>Review Analysis</h1>
+	</div>
+	<div class="review-form">
+		<form id="review-form" action = "http://localhost:9000/prediction" method = "post" >
+			<textarea name="message" class="form-control"   placeholder="Enter your Review" rows="4" required></textarea><br>
+			<input type="submit" class="form-control submit" value="Predict"><br><br><br><br><br><br>
+			<textarea name="message-1" class="form-control" placeholder="Predicted Rating is" rows="2">{{prediction}}</textarea><br>
+
+		</form>
+	</div>
+</body>
+</html>

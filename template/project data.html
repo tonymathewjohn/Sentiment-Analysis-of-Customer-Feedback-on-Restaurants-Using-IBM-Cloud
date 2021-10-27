@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Information</title>
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+<link rel="stylesheet" type="text/css" href="..\static\project data.css">
+</head>
+
+  <div class="main">
+
+
+     <ul>
+
+         <li class="active"><a href="{{ url_for('welcome') }}"><i class="fa fa-home"></i>Home</a></i>
+          </li>
+          <li><a href="prediction"><i class="fa fa-search" aria-hidden="true"></i>Predict</a>
+
+         <li><a href="#"><i class="fa fa-address-book-o"></i>About</a>
+         <div class="submenu">
+             <ul>
+                 <li>
+                     <a href="project"></i>Project</a>
+                 </li>
+                 <li>
+                     <a href="data"></i>Team</a>
+                 </li>
+             </ul>
+         </div>
+
+
+         </li>
+     </ul>
+ </div>
+<body>
+
+<div class="about-section">
+  <h1><b>Zomato Review Analysis</b></h1><br />
+  <p>The moto of our project is to check whether a given feedback is positive or negative.<br>In today’s digital world, a food app like Zomato is widely used because it provides a platform for people to share their
+  opinion about the restaurants and cafes they have visited and find a place to enjoy.<br>The feed back is categorised into 3 types as below:</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static', filename='happy1.jpg')}}" alt="Jane" >
+      <div class="container">
+       <h2>Positive Feedback</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img  src="{{url_for('static', filename='ok.gif')}}" alt="Mike" >
+      <div class="container">
+        <h2>Neutral Feedback</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static', filename='sad.jpg')}}" alt="John" >
+      <div class="container">
+        <h2>Negative Feedback</h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

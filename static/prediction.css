@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(prediction.jpg);
+	height: 100vh;
+	text-align: center;
+	background-size: 1300px 1350px;
+	background-position: center;
+  font-family: Courier;
+	overflow: hidden;
+
+}
+.review-title{
+	margin-top: 100px;
+	color: #7DE8F7;
+	text-transform: uppercase;
+	transition: all 2s ease-in-out;
+	font-family: Courier
+}
+
+.review-title h1{
+	font-size: 48px;
+	line-height: 10px;
+	font-family: Courier;
+}
+
+form{
+	margin-top: 50px;
+	transition: all 2s ease-in-out;
+}
+
+.form-control{
+	font-family:cursive;
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #900;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 16px;
+
+}
+
+input{
+	height: 45px;
+}
+
+form .submit{
+	background-color: #900;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+form .submit:hover{
+	background-color: #333;
+	cursor: pointer;
+}
+*/
+ul
+{
+  float: right;
+  list-style-type: none;
+  margin-top: 20px;
+}
+ul li
+{
+  display:inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease ;
+    border-radius: 20px;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+
+}
+
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.btn{
+    border:1px solid white;
+    padding: 10px 30px;
+    color:white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: white;
+    color:black;
+
+}
+.main .fa
+{
+    margin-right: 8px;
+}
+.submenu{
+    display: none;
+}
+.main ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -5px;
+
+}
+.main ul li:hover .submenu ul
+{
+    display: block;
+    margin: 10px;
+}
+.main ul li:hover .submenu li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+}
+.main ul li:hover .submenu li
+{
+    border-bottom: none;
+}
+.main {
+	text-align: end;
+}

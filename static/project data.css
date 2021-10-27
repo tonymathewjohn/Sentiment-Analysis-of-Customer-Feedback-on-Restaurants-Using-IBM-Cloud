@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family:Century Gothic;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url('project\ data.jpg');
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  height:20%;
+  margin-bottom: 16px;
+  padding: 0 15px;
+}
+img{
+ border-radius: 20px solid red;
+ height: 50%;
+ width: 100%;
+}
+.card {
+  box-shadow: 2px 2px 20px red;
+  margin: 13px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px solid red;
+
+ }
+
+
+.about-section {
+  padding: 90px;
+  text-align: center;
+  background-color: #8A2BE2;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+   transform:skew(20 deg,20 deg);
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+img{
+border-radius: 20px 20px 0 0 ;
+}
+
+h1{
+   font-style:italic;
+   font-size:40px;
+}
+h2{
+
+   font-size:30px;
+
+}
+
+
+ul
+{
+float: right;
+list-style-type: none;
+margin-top: 20px;
+}
+ul li
+{
+display:inline-block;
+
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease ;
+  border-radius: 20px;
+}
+ul li a:hover{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.btn{
+  border:1px solid white;
+  padding: 10px 30px;
+  color:white;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+.btn:hover{
+  background-color: white;
+  color:black;
+
+}
+.main .fa
+{
+  margin-right: 8px;
+}
+.submenu{
+  display: none;
+}
+.main ul li:hover .submenu{
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -5px;
+
+}
+.main ul li:hover .submenu ul
+{
+  display: block;
+  margin: 10px;
+}
+.main ul li:hover .submenu li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  border-radius: 0;
+  background: transparent;
+  text-align: left;
+}
+.main ul li:hover .submenu li
+{
+  border-bottom: none;
+}
