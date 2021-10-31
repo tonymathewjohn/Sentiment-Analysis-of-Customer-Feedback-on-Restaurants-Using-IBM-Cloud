@@ -2,7 +2,7 @@
 applications:
 
 
- - name: Python Flask App AZTGO
+ - name: Python Flask App REQFV 2021-10-30
    random-route: true
    memory: 512M
    disk_quota:1.5G 
