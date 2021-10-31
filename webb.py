@@ -3,6 +3,8 @@ import pandas as pd
 from flask import Flask, render_template, request
 import tensorflow as tf
 from tensorflow.keras.models import load_model
+from gevent.pywsgi import WSGIServer
+import os
 global graph
 graph = tf.compat.v1.get_default_graph()
 
@@ -57,5 +59,6 @@ def project():
 
 
 if __name__ == '__main__':
-    app.run(host = 'localhost',port =9000, debug = True , threaded = False)
+    app.secret_key = os.urandom(12)
+    app.run(debug=True, host='0.0.0.0', port=port)
 
